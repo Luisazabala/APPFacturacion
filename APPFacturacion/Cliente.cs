@@ -12,10 +12,17 @@ namespace APPFacturacion
         public string nombreCliente;
         public int telefono;
         public int edad;
+        public int estado = 1;
 
-        public int Documento { get; set; }
-        public string NombreCliente { get; set; }
-        public int Telefono { get; set; }
-        public int Edad { get; set; }
+        public int Documento { get => documento; set => documento = value; }
+        public string NombreCliente { get => nombreCliente; set => nombreCliente = value; }
+        public int Telefono { get => telefono; set => telefono = value; }
+        public int Edad { get => edad; set => edad = value; }
+        public int Estado { get => estado; set => estado = value; }
+
+        public Cliente()
+        {
+
+        }
     }
 }
